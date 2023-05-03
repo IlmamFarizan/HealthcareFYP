@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66F3AAB4-B7B4-4728-995F-32B384341DF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Healthcare_.My.MyApplication</StartupObject>
+    <RootNamespace>Healthcare_</RootNamespace>
+    <AssemblyName>Healthcare+</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Healthcare+.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Healthcare+.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.Designer.vb">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antiseptic.Designer.vb">
+      <DependentUpon>Antiseptic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Antiseptic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articles.Designer.vb">
+      <DependentUpon>Articles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeautyProducts.Designer.vb">
+      <DependentUpon>BeautyProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BeautyProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMICalculator.Designer.vb">
+      <DependentUpon>BMICalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BMICalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoughnFlu.Designer.vb">
+      <DependentUpon>CoughnFlu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CoughnFlu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Covid19Article.Designer.vb">
+      <DependentUpon>Covid19Article.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Covid19Article.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DHDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DHDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorCategory.Designer.vb">
+      <DependentUpon>DoctorCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.vb">
+      <DependentUpon>EditProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fever.Designer.vb">
+      <DependentUpon>Fever.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fever.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindHospital.Designer.vb">
+      <DependentUpon>FindHospital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindHospital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindUs.Designer.vb">
+      <DependentUpon>FindUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralPractitioner.Designer.vb">
+      <DependentUpon>GeneralPractitioner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralPractitioner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GleneaglesHospital.Designer.vb">
+      <DependentUpon>GleneaglesHospital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GleneaglesHospital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="HealthSupport.Designer.vb">
+      <DependentUpon>HealthSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HealthSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KLGeneralHospital.Designer.vb">
+      <DependentUpon>KLGeneralHospital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KLGeneralHospital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaternalSpecialist.Designer.vb">
+      <DependentUpon>MaternalSpecialist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaternalSpecialist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSUHospital.Designer.vb">
+      <DependentUpon>MSUHospital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MSUHospital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersonalHealthArticle.Designer.vb">
+      <DependentUpon>PersonalHealthArticle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalHealthArticle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy.Designer.vb">
+      <DependentUpon>Pharmacy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregnancyArticle.Designer.vb">
+      <DependentUpon>PregnancyArticle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PregnancyArticle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrinceCourtHospital.Designer.vb">
+      <DependentUpon>PrinceCourtHospital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrinceCourtHospital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.vb">
+      <DependentUpon>Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Psychiatrist.Designer.vb">
+      <DependentUpon>Psychiatrist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Psychiatrist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDoctor.Designer.vb">
+      <DependentUpon>SearchDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkinSpecialist.Designer.vb">
+      <DependentUpon>SkinSpecialist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SkinSpecialist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stomach.Designer.vb">
+      <DependentUpon>Stomach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stomach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Antiseptic.resx">
+      <DependentUpon>Antiseptic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles.resx">
+      <DependentUpon>Articles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeautyProducts.resx">
+      <DependentUpon>BeautyProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMICalculator.resx">
+      <DependentUpon>BMICalculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoughnFlu.resx">
+      <DependentUpon>CoughnFlu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Covid19Article.resx">
+      <DependentUpon>Covid19Article.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorCategory.resx">
+      <DependentUpon>DoctorCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fever.resx">
+      <DependentUpon>Fever.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindHospital.resx">
+      <DependentUpon>FindHospital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindUs.resx">
+      <DependentUpon>FindUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralPractitioner.resx">
+      <DependentUpon>GeneralPractitioner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GleneaglesHospital.resx">
+      <DependentUpon>GleneaglesHospital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthSupport.resx">
+      <DependentUpon>HealthSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KLGeneralHospital.resx">
+      <DependentUpon>KLGeneralHospital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaternalSpecialist.resx">
+      <DependentUpon>MaternalSpecialist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSUHospital.resx">
+      <DependentUpon>MSUHospital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalHealthArticle.resx">
+      <DependentUpon>PersonalHealthArticle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy.resx">
+      <DependentUpon>Pharmacy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregnancyArticle.resx">
+      <DependentUpon>PregnancyArticle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrinceCourtHospital.resx">
+      <DependentUpon>PrinceCourtHospital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Psychiatrist.resx">
+      <DependentUpon>Psychiatrist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDoctor.resx">
+      <DependentUpon>SearchDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinSpecialist.resx">
+      <DependentUpon>SkinSpecialist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stomach.resx">
+      <DependentUpon>Stomach.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DHDatabaseDataSet.xsc">
+      <DependentUpon>DHDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DHDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DHDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DHDatabaseDataSet.xss">
+      <DependentUpon>DHDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DHDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
